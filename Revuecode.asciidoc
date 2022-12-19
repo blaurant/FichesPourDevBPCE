@@ -1,0 +1,99 @@
+
+= Coder à plusieur
+
+Le développement de logiciel complexe, est un domaine très compliqué, et un principe générale s'applique : *faire bien est la méthode la plus rapide.* Et pour faire bien, un seul point de vu est rarement suffisant.
+
+
+IMPORTANT: Donc oui, c'est contre intuitif, mais coder à plusieur ça coûte moins cher au final !
+
+Plusieures habitudes sont souvent utilisées pour cela :
+
+- le design collaboratif (en petit groupe)
+- le pair programming (à 2) et le mob programming (en groupe)
+- la revue de code (à 2 ou plus)
+
+== Le design collaboratif
+
+L'objectif de ce moment à plusieur est de réaliser un meilleur design comparé à ce qu'on pourrait faire tout seul. Parce qu’un mauvais design coute 100x plus cher qu’un bug, c'est hyper important de mettre en commun les compétances et de commencer un projet/une épic/une feature avec un design qui a bien compris le métier.
+
+.Design collaboratif
+image::images/designgroup.png[Design collaboratif]
+
+Ce moment de groupe, permet d'éviter de se rentre compte tard que ce n'est pas une bonne solution, de vérifier qu’on a bien compris la même chose et de construire une tactique pour attaquer le dev.
+
+Bien entendu le design qui va émerger peut et va forcement évoluer avec le code et la maturité de compréhenssion du problème.
+
+=> *On vient avec* :
+
+- les US, c'est à dire les scénarios écrit dans le langage du domaine, les règles de domaine, les comportements attendu et les tests d’acceptances
+- on invite un expert métier qui peut répondre aux questions métier
+- on vient avec les schémas des modèles imaginé chacun dans con coin
+- on a besoin de tableaux blanc et d'écoute active
+- on laisse son égo au vestiaire, on ne juge pas et on respecte
+
+=> *On explore*
+
+- On explique les choix de design
+- On déroule les scénarios sur les modèles
+- On se challenge les uns/les autres
+- On anticipe la suite (juste ce qu’il faut, et pas plus !)
+- On découpe si trop gros
+
+=> *On repart avec* :
+
+- La meilleur des solutions résultant du groupe
+- Une tactique (qui peut changer en cours de route évidement !)
+- Plus de confiance
+
+
+== Le code à plusieur
+
+Parce que bien coder n’est pas simple, la tête dans le guidon, on rate des choses.
+
+IMPORTANT: En tant developpeur professionnel au sein d'une équipe, on est tous responsable du code, le code est a tout le monde.
+
+Pour gagner du temps, pour converger le style de code, pour vérifier de ne rien rater, pour augmenter la qualité du code, pour diffuser les connaissances et compétances, *on ne code pas seul dans son coin*.
+
+- Le pair programming consiste à se mettre à deux derrière un écran et échanger de clavier régulièrement (toute les 10 ou 20 mins). C'est un gain de temps.
+Même si il faut varier les moments ou l'on est seul et où on code à plusieur, coder à deux n'est jamais une perte de temps pour l'entreprise.
+
+- Le Mob programming, ou programmation en groupe consiste à se réunir dans une salle (qui peut etre virtuelle) et changer celui qui a le clavier toutes les 10mins. Celui qui a tape ne voit dire ce qu"il faut taper par les autres. C'est donc accessible aux débutants aussi.
+
+.Mob programming
+image::images/mobprogramming.png[Mob programming]
+
+== La revue de code
+
+La revue de code, c'est le minimun vital.
+
+Mettre en prod un mauvais code coûtera cher à l'entreprise dans le futur, alors la revue de code est le dernier barrage avant la création de dette.
+
+.Revue de code
+image::images/revuecode.png[Mob programming]
+
+C'est un moment où l'on va :
+
+- transmettre de la connaissance
+- améliorer le code
+- éviter des problèmes
+- converge les styles de programmation
+- valider le code pour l'intégrer
+
+Une revue se déroule en générale en 3 étapes :
+
+- on explique le besoin
+- on montre le design (schéma, doc)
+- on explore le code (clean code, clean archi, patterns, pyramide de tests, etc.)
+
+C'est une pratique à faire à deux devant un écran (remote possible), mais à deux *au même moment*. Valider des PR sans celui qui a fait le code ce n'est pas une revue de code, c'est un contrôle du code.
+
+Lorsque ces pratiques ne sont pas bien en place dans les équipes, il n'est pas inutile de le mettre dans le process de création, par exemple une colonne dans le Kanban d'équipe.
+
+
+IMPORTANT: Plus que des validations de PR dans son coin (ça fait trop correction !), privilégier à 2 devant l’écran ou à distance, mais en même temps pour échanger de vive voie.
+
+
+
+
+
+
